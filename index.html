@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <table id="cart">
+        <thead>
+            <tr>
+                <th>Product name</th>
+                <th>Price unit</th>
+                <th>Quantity</th>
+                <th>Sub-total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="product">
+                <td class="name">
+                    <span>Camisas de perritos</span>
+                </td>
+        
+                <td class="pu">
+                    $<span> 25.00</span>
+                </td>
+        
+                <td class="qty">
+                    <label>
+                        <input id="quantity" type="number" value="0" min="0" >
+                    </label>
+                </td>
+        
+                <td class="subtot">
+                    $<span>0</span>
+                </td>
+        
+                <td class="rm">
+                    <button class="btn btn-delete">Delete</button>
+                </td>
+            </tr><!-- product -->
+            <tr class="product">
+                <td class="name">
+                    <span>Camisa para gatos</span>
+                </td>
+        
+                <td class="pu">
+                    $<span>15.00</span>
+                </td>
+        
+                <td class="qty">
+                    <label>
+                        <input type="number" value="0" min="0">
+                    </label>
+                </td>
+        
+                <td class="subtot">
+                    $<span>0</span>
+                </td>
+        
+                <td class="rm">
+                    <button class="btn btn-delete">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="cta">
+        <button id="calc" class="btn btn-success">Calculate prices</button>
+      </p>
+    
+      <h2 id="total-value">Total: $<span>0</span></h2>
+      <script src="./javascript/main.js"></script>
+    
+</body>
+</html>
